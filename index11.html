@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>homework8</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .box{
+
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border: solid 1px red;
+            border-radius: 50%;
+            background-color: red;
+            margin:100px auto auto 700px;
+            animation-name: move;
+            animation-duration:1.5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+	}
+        .box1{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border: solid 1px red;
+            border-radius: 50%;
+            background-color: red;
+            margin:100px auto auto 700px;
+            animation-name: move1;
+            animation-duration:1.5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+	
+        }
+        .box2{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border: solid 1px red;
+            border-radius: 50%;
+            background-color: red;
+            margin:100px auto auto 700px;
+            animation-name: move2;
+            animation-duration:1.5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+
+        }
+        .box3{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border: solid 1px red;
+            border-radius: 50%;
+            background-color: red;
+            margin:100px auto auto 700px;
+            animation-name: move3;
+            animation-duration:1.5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+	
+        }
+        @keyframes move{
+	0%{
+			transform: scale(1);
+		}
+		25%{
+			transform: scale(1.1);
+     	}
+			
+		75%{ transform: scale(1.2);
+            box-shadow: 0 0 15px 0px red;
+            box-shadow: 0 0 15px 10px red;
+            box-shadow: 0 0 15px 20px red;
+            box-shadow: 0 0 25px 30px red;
+            
+		}
+        85%{ transform: scale(1.3);			
+            box-shadow: 0 0 15px 0px red;
+            box-shadow: 0 0 15px 8px red;
+            box-shadow: 0 0 15px 10px red;
+            box-shadow: 0 0 25px 20px red;
+            opacity: 0.1;
+            
+            
+		}
+		90%{transform: scale(1.2);		
+            box-shadow: 0 0 15px 0px red;
+            box-shadow: 0 0 15px 8px red;
+            box-shadow: 0 0 15px 10px red;
+            box-shadow: 0 0 25px 20px red;
+		}
+            
+		100%{
+			transform: scale(1);
+		}
+	}
+          @keyframes move2{
+	0%{
+			transform: scale(1);
+		}
+		25%{
+			transform: scale(1.1);
+     	}
+			
+		75%{ transform: scale(1.2);        
+		}
+        85%{ transform: scale(1.3);			
+            opacity: 0;
+            
+		}
+		
+		100%{
+			transform: scale(1);
+		}
+	}
+          @keyframes move3{
+	0%{
+			transform: scale(1);
+		}
+		25%{
+			transform: scale(1.1);
+     	}
+			
+		75%{ transform: scale(1.2);            
+		}
+        85%{ transform: scale(1.5);			
+            opacity: 0;
+            
+		}
+		100%{
+			transform: scale(1);
+		}
+	}
+        .animation:hover{
+            animation-play-state: paused;
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="animation">
+       <div class="box"></div>
+       <div class="box1"></div>
+       <div class="box2"></div>
+       <div class="box3"></div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>homework8</title>
+	<style>
+	body{
+background-color:black;
+	}
+        body{
+            background-color: 
+        }
+		.box{
+
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	border: solid 1px red;
+	border-radius: 50%;
+	background-color: red;
+	margin:100px auto auto 700px;
+	animation-name: move;
+	animation-duration:1.2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-out;
+	}
+
+	@keyframes move{
+	0%{
+			transform: scale(1.1);
+		}
+		25%{
+            transform: scale(1);         
+		}
+        28%{
+            box-shadow: 0 0 10x 5px rgba(255,0,0,0.1);    
+        }
+		
+		30%{
+            box-shadow: 0 0 5px 5px rgba(255,0,0,0.5);
+		}
+        
+        60%{
+            box-shadow: 0 0 5px 20px rgba(255,0,0,0.1);
+        }
+       
+        80%{
+            box-shadow: 0 0 5px 5px rgba(255,0,0,0.4);
+        }
+        90%{
+             box-shadow: 0 0 15px 25px rgba(255,0,0,0.4);
+        }
+        
+		100%{
+            box-shadow: 0 0 15px 30px rgba(255,0,0,0.1);  
+			
+		}
+	}
+        .box:hover{
+            animation-play-state: paused;
+            
+        }
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+	
+
+</body>
+</html>
